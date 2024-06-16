@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Squares Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <div class="menu" id="menu">
+            <h1>Click The Block...</h1>
+            <section class="time">
+                <label for="timer-select">Choose Timer:</label>
+                <select id="timer-select">
+                    <option value="10">10 seconds</option>
+                    <option value="30" selected>30 seconds</option>
+                    <option value="60">1 minute</option>
+                </select>
+            </section>
+            <section id="buttons">
+                <button id="instructions-button">Instructions</button>
+                <button id="start-button">Start Game</button>
+            </section>
+        </div>
+        <div class="score">Score: <span id="score">0</span></div>
+        <div class="timer">Time: <span id="timer">30</span>s</div>
+        <div class="instructions" id="instructions">
+            <h2>Instructions</h2>
+            <p>Click on the squares to score points. The game ends when the timer reaches zero. Good luck!</p>
+            <button id="back-button">Back to Menu</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
